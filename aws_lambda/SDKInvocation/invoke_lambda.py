@@ -12,7 +12,7 @@ import boto3
 lambda_client = boto3.client('lambda')
 print("Invoking another lambda function.......")
 # Define the parameters for the Lambda invocations
-function_name = "TestFun"   # TestFun is the function which already exists
+function_name = "DBUpdates"   # TestFun is the function which already exists
 payload = {'type' : "write",'key2' : "value2"}
 
 # Invoke the lambda function
